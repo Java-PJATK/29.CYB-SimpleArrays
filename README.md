@@ -154,3 +154,7 @@ public class SimpleArrays {
     }
 }
 ```
+
+Note that the array b has rows of different lengths, so, in the loop which prints its elements, we have to use, in the inner loop, `col < b[row].length`.
+
+Note also the array `f`. It is a 2D array, that is _one-dimensional_ array of references to one-dimensional arrays. Therefore, in order to create it, we have to specify only number of its elements (that is number of ‘rows’); all these elements have initially the value `null`, and their type is _reference to an array of_ `int`s. Of course, we can later assign to them references to any arrays of integers (of any lengths).  
