@@ -48,9 +48,9 @@ However, very often they do have the same length: we call such
 (called matrices in mathematics):
 
 ```java
-int[][] arr = { {1,  2,  3,  4},
-              { 11, 22, 33, 44},
-              { -1, -2, -3, -4} };
+int[][] arr = { {  1,  2,  3,  4},
+                { 11, 22, 33, 44},
+                { -1, -2, -3, -4} };
 ```
 
 Individual arrays (`{1,2,3,4}`, `{11,22,33,44}` and `{-1,-2,-3,-4}` in this example) are called rows of this array — they correspond to `arr[0]`, `arr[1]`, `arr[2]`. 
