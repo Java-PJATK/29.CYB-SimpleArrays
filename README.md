@@ -39,13 +39,11 @@ Expression `b.length` is 3, as there are three references to arrays in `b`, whil
 
 The type `int[][]` is _reference to array of references to arrays_ of `int`s.  
 
-Note also, that all elements of a ‘two-dimensional’ array are references to ‘normal’
-arrays of the same type, but not necessarily of the same length (as shown in the above
-example). Such arrays, where rows are of different lengths, are called jagged arrays
-(or ‘ragged arrays’).
-However, very often they do have the same length: we call such
-2D arrays rectangular arrays, as we can visualize them as ‘rectangles’ of elements
-(called matrices in mathematics):
+Note also, that all elements of a ‘two-dimensional’ array are references to ‘normal’ arrays of the same type, but not necessarily of the same length (as shown in the above example). 
+
+Such arrays, where rows are of different lengths, are called **jagged arrays** (or ‘ragged arrays’).
+
+However, very often they do have the same length: we call such 2D arrays rectangular arrays, as we can visualize them as ‘rectangles’ of elements (called matrices in mathematics):
 
 ```java
 int[][] arr = { {  1,  2,  3,  4},
@@ -68,8 +66,7 @@ int[][] squ = { { 1,  2,  3,   4},
                 { 13, 14, 15, 16} };
 ```
 
-For square arrays it makes sense to talk about its diagonals. The **main diagonal** (or just ‘diagonal’) consists of the elements for which the row and column indices are the same, or in other words these are elements on the diagonal going from the upper-left
-corner to the lower-right one (in the example above, these are elements 1, 6, 11, 16).  
+For square arrays it makes sense to talk about its diagonals. The **main diagonal** (or just ‘diagonal’) consists of the elements for which the row and column indices are the same, or in other words these are elements on the diagonal going from the upper-left corner to the lower-right one (in the example above, these are elements 1, 6, 11, 16).  
 
 The **antidiagonal** are elements for which the sum of row and column indices is fixed and equal to `size-1`, where `size` is the number of columns (equal to the number of rows).  
 
