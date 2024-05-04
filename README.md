@@ -39,11 +39,11 @@ Expression `b.length` is 3, as there are three references to arrays in `b`, whil
 
 The type `int[][]` is _reference to array of references to arrays_ of `int`s.  
 
-Note also, that all elements of a ‘two-dimensional’ array are references to ‘normal’ arrays of the same type, but not necessarily of the same length (as shown in the above example). 
+Note also, that all elements of a ‘two-dimensional’ array are references to ‘normal’ arrays of the same type, but _not_ necessarily of the same length (as shown in the above example). 
 
 Such arrays, where rows are of different lengths, are called **jagged arrays** (or ‘ragged arrays’).
 
-However, very often they do have the same length: we call such 2D arrays rectangular arrays, as we can visualize them as ‘rectangles’ of elements (called matrices in mathematics):
+However, very often they _do have_ the same length: we call such 2D arrays **rectangular arrays**, as we can visualize them as ‘rectangles’ of elements (called _matrices_ in mathematics):
 
 ```java
 int[][] arr = { {  1,  2,  3,  4},
